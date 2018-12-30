@@ -20,24 +20,24 @@ type Logger interface {
 type stdLog struct{}
 
 func (stdLog) Info(msg string) {
-	log.Printf("Info %s\n", msg)
+	log.Printf("Info Dr. %s\n", msg)
 }
 
 func (stdLog) Debug(msg string) {
 	if InDebug {
-		log.Printf("Debug %s\n", msg)
+		log.Printf("Debug Dr. %s\n", msg)
 	}
 }
 
 func (stdLog) Warn(msg string) {
-	log.Printf("Warn %s\n", msg)
+	log.Printf("Warn Dr. %s\n", msg)
 }
 
 func (stdLog) Error(msg string) {
-	log.Printf("Error %s\n", msg)
+	log.Printf("Error Dr. %s\n", msg)
 }
 
 func (stdLog) Panic(msg string) {
-	log.Printf("Panic %s\n", msg)
+	log.Printf("Panic Dr. %s\n", msg)
 	panic(msg)
 }

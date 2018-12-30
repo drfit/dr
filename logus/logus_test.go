@@ -17,17 +17,17 @@ func TestStdLog(t *testing.T) {
 	}{
 		{
 			input:  "ping pong",
-			output: ".* Info ping pong",
+			output: ".* Info Dr. ping pong",
 			logFun: Info,
 		},
 		{
 			input:  "ping pong",
-			output: ".* Warn ping pong",
+			output: ".* Warn Dr. ping pong",
 			logFun: Warn,
 		},
 		{
 			input:  "ping pong",
-			output: ".* Error ping pong",
+			output: ".* Error Dr. ping pong",
 			logFun: Error,
 		},
 	} {
@@ -50,7 +50,7 @@ func TestStdLog_Debug(t *testing.T) {
 	InDebug = true
 	buf.Reset()
 	Debug("ping pong")
-	assert.Regexp(t, ".* Debug ping pong", buf.String())
+	assert.Regexp(t, ".* Debug Dr. ping pong", buf.String())
 
 	InDebug = oldInDebug
 }
@@ -60,7 +60,7 @@ func TestStdLog_Panic(t *testing.T) {
 	log.SetOutput(buf)
 
 	defer func() {
-		assert.Regexp(t, ".* Panic ping pong", buf.String())
+		assert.Regexp(t, ".* Panic Dr. ping pong", buf.String())
 		err := recover()
 		msg, _ := err.(string)
 		assert.Equal(t, "ping pong", msg)
