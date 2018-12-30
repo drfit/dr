@@ -1,7 +1,7 @@
 GO ?= go
 GOFMT ?= gofmt "-s"
-PACKAGES ?= $(shell $(GO) list ./...)
-VETPACKAGES ?= $(shell $(GO) list ./...)
+PACKAGES ?= $(shell GO111MODULE=on $(GO) list ./...)
+VETPACKAGES ?= $(shell GO111MODULE=on $(GO) list ./...)
 GOFILES := $(shell find . -name "*.go" -type f)
 
 .PHONY: all
