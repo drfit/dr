@@ -1,0 +1,21 @@
+language: go
+go:
+  - 1.11.x
+  - tip
+
+matrix:
+  allow_failures:
+    - go: tip
+  fast_finish: true
+
+install:
+  - GO111MODULE=off go get golang.org/x/lint/golint
+  - GO111MODULE=off go get github.com/alecthomas/gometalinter
+
+script:
+  - GO111MODULE=on gometalinter --install
+  - GO111MODULE=on gometalinter --disable-all -E vet -E gofmt -E misspell -E ineffassign -E goimports -E deadcode --tests ./...
+  - go test -race ./...
+
+after_script:
+  - golint ./...
