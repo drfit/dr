@@ -54,5 +54,5 @@ misspell:
 
 .PHONY: tools
 tools:
-	go install golang.org/x/lint/golint; \
-	go install github.com/client9/misspell/cmd/misspell;
+	GO111MODULE=off $(GO) get golang.org/x/lint/golint
+	GO111MODULE=off $(GO) get github.com/client9/misspell/cmd/misspell
