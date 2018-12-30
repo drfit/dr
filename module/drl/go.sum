@@ -2,8 +2,8 @@ github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSs
 github.com/pkg/errors v0.8.0/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/stretchr/testify v1.2.2/go.mod h1:a8OnRcib4nhh0OaRAV+Yts87kKdq0PP7pXfy6kDkUVs=
-github.com/unisx/dr v0.0.0-20181230103335-c56bde0b4d48 h1:ryISPyhBOOOg/ziQ4bQHXMR/M3/khPd9S+Z5smpO2QI=
-github.com/unisx/dr v0.0.0-20181230103335-c56bde0b4d48/go.mod h1:IjumVGHoTWT0DHkRgKmD45xhGUvd37SqmErDOLCzX6k=
+github.com/unisx/dr v0.0.0-20181230160655-edca87deac94 h1:5N5zSlFVgks9V4JLfqt0he/lfxJ+ys0ZvPcnzzHdhfo=
+github.com/unisx/dr v0.0.0-20181230160655-edca87deac94/go.mod h1:IjumVGHoTWT0DHkRgKmD45xhGUvd37SqmErDOLCzX6k=
 github.com/unisx/logus v0.2.2 h1:edCfBAOZdJafI/QmPRU/Lb3Ky8lEIUbGqIuXJn+PAQk=
 github.com/unisx/logus v0.2.2/go.mod h1:zfSpWYJHYf/YfnwhLO6Ydqy7vnIV6A98+LnTVNauWMY=
 go.uber.org/atomic v1.3.2 h1:2Oa65PReHzfn29GpvgsYwloV9AVFHPDk8tYxt2c2tr4=

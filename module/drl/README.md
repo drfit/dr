@@ -7,7 +7,7 @@ on [github.com/unisx/logus](https://github.com/unisx/logus 'logus in GitHub')
 ```$go
 import (
     "github.com/unisx/dr/logus"
-    _ "github.com/unisx/dr/module/drL"
+    _ "github.com/unisx/dr/module/drl"
 )
 
 func main() {
