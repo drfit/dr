@@ -10,6 +10,9 @@ all: fmt ci
 .PHONY: ci
 ci: misspell lint vet test
 
+.PHONY: ci-check
+ci-check: misspell lint test
+
 .PHONY: test
 test:
 	GO111MODULE=on go test -race ./...

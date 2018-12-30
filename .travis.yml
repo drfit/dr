@@ -12,4 +12,4 @@ install:
   - make tools
 
 script:
-  - make ci
+  - make ci-check
