@@ -9,13 +9,7 @@ matrix:
   fast_finish: true
 
 install:
-  - GO111MODULE=off go get golang.org/x/lint/golint
-  - GO111MODULE=off go get github.com/alecthomas/gometalinter
+  - make tools
 
 script:
-  - GO111MODULE=on gometalinter --install
-  - GO111MODULE=on gometalinter --disable-all -E vet -E gofmt -E misspell -E ineffassign -E goimports -E deadcode --tests ./...
-  - GO111MODULE=on go test -race ./...
-
-after_script:
-  - GO111MODULE=on golint ./...
+  - make ci

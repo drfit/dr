@@ -1,8 +1,10 @@
 package logus
 
 var (
-	logger  Logger
+	// InDebug Whether Dr. is in debug mode
 	InDebug bool
+
+	logger Logger
 )
 
 // Register replace a new logger to print log msg
