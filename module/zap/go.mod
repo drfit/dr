@@ -1,4 +1,4 @@
-module github.com/unisx/dr/module/drl
+module github.com/unisx/dr/module/zap
 
 require (
 	github.com/unisx/dr v0.0.0-20181230160655-edca87deac94
