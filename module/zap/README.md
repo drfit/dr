@@ -5,7 +5,9 @@ logus is a wrap of [uber zap](https://github.com/uber-go/zap 'zap in GitHub').
 
 ### Usage
 
-```$go
+```go
+package main
+
 import (
     "github.com/unisx/dr/logus"
     _ "github.com/unisx/dr/module/zap"
