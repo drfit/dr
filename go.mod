@@ -1,4 +1,4 @@
-module github.com/unisx/dr
+module github.com/go-dr/dr
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect

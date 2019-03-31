@@ -1,9 +1,0 @@
-github.com/spf13/cobra v0.0.3 h1:ZlrZ4XsMRm04Fr5pSFxBgfND2EBVa1nLpiy1stUsX/8=
-github.com/spf13/cobra v0.0.3/go.mod h1:1l0Ry5zgKvJasoi3XT1TypsSe7PqH0Sj9dhYf7v3XqQ=
-github.com/spf13/pflag v1.0.3 h1:zPAT6CGy6wXeQ7NtTnaTerfKOsV6V6F8agHXFiazDkg=
-github.com/spf13/pflag v1.0.3/go.mod h1:DYY7MBk1bdzusC3SYhjObp+wFpr4gzcvqqNjLnInEg4=
-github.com/unisx/dr/module/cmd v0.0.0-20181231162440-0430a6cbee84/go.mod h1:fE1GJn4kjstVbbYhu/xFM+zp/mxhCMLo3DQ7HW7punA=
-github.com/unisx/dr/module/cmd v0.0.0-20181231170414-08c19600e902 h1:Y7psWw/bUg9FjoHrWhMSRR+nnrhp70yr9g6Q5doAgBQ=
-github.com/unisx/dr/module/cmd v0.0.0-20181231170414-08c19600e902/go.mod h1:fE1GJn4kjstVbbYhu/xFM+zp/mxhCMLo3DQ7HW7punA=
-github.com/unisx/dr/module/openapi v0.0.0-20181231170414-08c19600e902 h1:vLoA7kVDWo+IHyO47P9YCpiI+uPclwkSnn1TKLo/Orc=
-github.com/unisx/dr/module/openapi v0.0.0-20181231170414-08c19600e902/go.mod h1:fdK5oNUxG795RJdAzNlqIG7H5OA/j6ld8UylRMiadds=
