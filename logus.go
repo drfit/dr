@@ -7,12 +7,8 @@ var (
 	InDebug bool
 
 	// logus dr. log print object
-	logus Logger
+	logus Logger = stdLog{}
 )
-
-func init() {
-	Register(stdLog{})
-}
 
 // Logger interface collect engine log message
 type Logger interface {
@@ -23,8 +19,8 @@ type Logger interface {
 	Panic(msg string)
 }
 
-// Register replace a new logger to print log msg
-func Register(l Logger) {
+// SetLogger replace a new logger to print log msg
+func SetLogger(l Logger) {
 	if l != nil {
 		logus = l
 	}
