@@ -1,4 +1,4 @@
-package logus
+package dr
 
 import (
 	"bytes"
@@ -18,17 +18,17 @@ func TestStdLog(t *testing.T) {
 		{
 			input:  "ping pong",
 			output: ".* Info Dr. ping pong",
-			logFun: Info,
+			logFun: logus.Info,
 		},
 		{
 			input:  "ping pong",
 			output: ".* Warn Dr. ping pong",
-			logFun: Warn,
+			logFun: logus.Warn,
 		},
 		{
 			input:  "ping pong",
 			output: ".* Error Dr. ping pong",
-			logFun: Error,
+			logFun: logus.Error,
 		},
 	} {
 		buf.Reset()
@@ -44,12 +44,12 @@ func TestStdLog_Debug(t *testing.T) {
 	log.SetOutput(buf)
 
 	InDebug = false
-	Debug("ping pong")
+	logus.Debug("ping pong")
 	assert.Equal(t, "", buf.String())
 
 	InDebug = true
 	buf.Reset()
-	Debug("ping pong")
+	logus.Debug("ping pong")
 	assert.Regexp(t, ".* Debug Dr. ping pong", buf.String())
 
 	InDebug = oldInDebug
@@ -66,5 +66,5 @@ func TestStdLog_Panic(t *testing.T) {
 		assert.Equal(t, "ping pong", msg)
 	}()
 
-	Panic("ping pong")
+	logus.Panic("ping pong")
 }

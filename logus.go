@@ -1,7 +1,13 @@
-package logus
+package dr
 
-import (
-	"log"
+import "log"
+
+var (
+	// InDebug Whether Dr. is in debug mode
+	InDebug bool
+
+	// logus dr. log print object
+	logus Logger
 )
 
 func init() {
@@ -17,6 +23,14 @@ type Logger interface {
 	Panic(msg string)
 }
 
+// Register replace a new logger to print log msg
+func Register(l Logger) {
+	if l != nil {
+		logus = l
+	}
+}
+
+// stdLog Logger instance backend by std log
 type stdLog struct{}
 
 func (stdLog) Info(msg string) {
